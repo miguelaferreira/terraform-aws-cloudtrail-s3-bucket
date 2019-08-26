@@ -57,7 +57,7 @@ data "aws_iam_policy_document" "default" {
 }
 
 module "s3_bucket" {
-  source                             = "git::https://github.com/cloudposse/terraform-aws-s3-log-storage.git?ref=tags/0.6.0"
+  source                             = "git::https://github.com/miguelaferreira/terraform-aws-s3-log-storage.git?ref=customize-tags"
   enabled                            = var.enabled
   namespace                          = var.namespace
   stage                              = var.stage
